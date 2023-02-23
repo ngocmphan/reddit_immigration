@@ -1,7 +1,7 @@
 # Reddit Immigration
 
 ## Topic
-The topic of the project is to explore the issues and topics discussed on Reddit relating to immigration to Canada. Immigration here can relate to the early inquiring stage, applying stage, processing stage, and obtaining results stage. 
+The topic of the project is to explore the issues and topics discussed on Reddit relating to immigrating to Canada. Immigration here can relate to the early inquiring stage, applying stage, processing stage, and obtaining results stage. 
 
 ## Problem statement and background
 The permanent residence (PR) process is a lengthy process which starts from the preparation of the experience, skills and finances for the immigration program, to the time the applicant obtained the permanent residence. The total process can take up to six years with significant financial decisions involved: application fees, lawyer fees, self-sustaining expenses, etc. 
