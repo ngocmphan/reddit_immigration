@@ -8,6 +8,8 @@ The permanent residence (PR) process is a lengthy process which starts from the 
 
 As the PR process requires significant preparations, there are many questions regarding the process from applicants. The ideal option is to consult with lawyers or contract a legal firm to prepare the application on behalf of the applicant; however, this path is known for being costly. Therefore, it is very common that people would post their questions regarding the process on social media or public forums. From this, the project aims to understand the questions and concerns posted on Reddit with emphasis on common issues asked, topics mentioned and the general review of the process or point of improvements. 
 
+For the scope of the project, we focus on the data and posts for the period of 10 years: Jan 2013 - Jan 2023. 
+
 ## Data sources and variables 
 The data is obtained from Reddit directly through the use of Reddit API. The project used PRAW - Python Reddit API Wrapper to directly access Reddit. 
 The following variables are used for analysis in the project: 
@@ -21,6 +23,11 @@ The following variables are used for analysis in the project:
 * created_utc: Post created time based on Unix timestamp. 
 * num_comments: Number of comments of the post. 
 * id: Unique ID of the post. 
+
+## Language and Tools used
+* Python and related libraries (pandas, matplotlib, etc.)
+* PRAW - Python Reddit API Wrapper
+* PSAW - Python Pushift API Wrapper
 
 ## Deliverables
 ### Understanding of the posts and questions asked: Issues/questions, topics, and immigration programs
