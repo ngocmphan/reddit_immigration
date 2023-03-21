@@ -16,7 +16,7 @@ The following variables are used for analysis in the project:
 * selftext: The content of the original post
 * author_fullname: Author name account
 * title: Title of the post
-* ups: Upvote of the post
+* ups: Upvote of the post (noted that PMAW uses score as ups)
 * link_flair_text: Program category of the post (Express entry, Citizenship, Visitor Visa, Sponsorship, PNP, Meta, Public Policy pathways, Study Permit, Work Permit, Quebec, Covid-19, Other)
 * upvote_ratio: The ratio of the upvote of the post
 * media_embed: Embedded links in the post
@@ -27,7 +27,7 @@ The following variables are used for analysis in the project:
 ## Language and Tools used
 * Python and related libraries (pandas, matplotlib, etc.)
 * PRAW - Python Reddit API Wrapper
-* PSAW - Python Pushift API Wrapper
+* PMAW - Python Pushift API Wrapper
 
 ## Deliverables
 ### Understanding of the posts and questions asked: Issues/questions, topics, and immigration programs
