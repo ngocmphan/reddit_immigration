@@ -48,7 +48,7 @@ row3_space1, row3_1, row3_space2, row3_2, row3_space3 = st.columns(
 with row3_1:
     st.subheader("How submissions per program changed by year?")
     fig = px.line(df_all_count, x='Year', y='Submission counts', color="Program", title='Submissions by program and by year - All posts')
-    st.plotly_chart(fig, theme='streamlit', use_container_width=True)
+    st.plotly_chart(fig, theme='streamlit', user_container_width=True)
     st.markdown(
     "TBD"
     )
@@ -71,5 +71,12 @@ with row4_1:
     fig = px.bar(df_all_count, x='Program', y='Submission counts', title="Total submissions per program")
     st.plotly_chart(fig, theme="streamlit", user_container_width=True)
     st.markdown("TBD")
+
+with row4_2:
+    st.subheader("Which program has the most comments?")
+    fig = px.bar(total_comments_year, x='Program', y='num_comments', title="Total comments per program")
+    st.plotly_chart(fig, theme="streamlit", user_container_width=True)
+    st.markdown("TBD")
+
 
 
