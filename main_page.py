@@ -42,7 +42,7 @@ with line1_1:
     )
  
 row3_space1, row3_1, row3_space2, row3_2, row3_space3 = st.columns(
-    (0.1, 1, 0.1, 1, 0.1)
+       (0.1, 2, 0.1, 2, 0.1)
 )
     
 with row3_1:
@@ -63,7 +63,7 @@ with row3_2:
     )
 
 row4_space1, row4_1, row4_space2, row4_2, row4_space3 = st.columns(
-    (0.1, 1, 0.1, 1, 0.1)
+    (0.1, 2, 0.1, 2, 0.1)
 )
 
 with row4_1:
@@ -78,5 +78,19 @@ with row4_2:
     st.plotly_chart(fig, theme="streamlit", user_container_width=True)
     st.markdown("TBD")
 
+row5_space1, row5_1, row5_space2, row5_2, row5_space3 = st.columns(
+    (0.1, 1, 0.1, 1, 0.1)
+)
+with row5_1:
+    st.subheader("What program has the highest average engagement?")
+    fig = px.bar(df_avg_comments, x='Program', y='avg_comments', title="Average Comments by Program")
+    st.plotly_chart(fig, theme="streamlit", user_container_width=True)
+    st.markdown("TBD")
+
+with row5_2:
+    st.subheader("What are the changes in engagement throughout the years by program?")
+    fig = px.line(df_avg_comments, x="Year", y="avg_comments", color="Program")
+    st.plotly_chart(fig, theme="streamlit", user_container_width=True)
+    st.markdown("TBD")
 
 
