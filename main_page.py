@@ -41,6 +41,7 @@ with line1_1:
  
 row3_space1, row3_1, row3_space2, row3_2, row3_space3 = st.columns(
     (0.1, 1, 0.1, 1, 0.1)
+)
     
 with row3_1:
     st.subheader("How submissions per program changed by year?")
