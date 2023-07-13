@@ -7,13 +7,13 @@ import streamlit as st
 
 
 # Import data
-df_all_count = pd.read_csv("/dashboard/df_all_count.csv")
-trend_month_all = pd.read_csv("/dashboard/trend_month_all.csv")
-total_comments_year = pd.read_csv("/dashboard/total_comments_year.csv")
-df_avg_comments = pd.read_csv("/dashboard/df_avg_comments.csv")
-df_all_adj = pd.read_csv("/dashboard/df_all_adj.csv")
-all_post_negative_scores = pd.read_csv("/dashboard/all_post_negative_scores.csv")
-apps_received_stats = pd.read_csv("/dashboard/apps_received_stats.csv")
+df_all_count = pd.read_csv("dashboard/df_all_count.csv")
+trend_month_all = pd.read_csv("dashboard/trend_month_all.csv")
+total_comments_year = pd.read_csv("dashboard/total_comments_year.csv")
+df_avg_comments = pd.read_csv("dashboard/df_avg_comments.csv")
+df_all_adj = pd.read_csv("dashboard/df_all_adj.csv")
+all_post_negative_scores = pd.read_csv("dashboard/all_post_negative_scores.csv")
+apps_received_stats = pd.read_csv("dashboard/apps_received_stats.csv")
 
 
 # Main Page
