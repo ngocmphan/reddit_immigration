@@ -16,7 +16,6 @@ all_post_negative_scores = pd.read_csv("all_post_negative_scores.csv")
 apps_received_stats = pd.read_csv("apps_received_stats.csv")
 
 
-
 # Main Page
 st.markdown("# Main Page")
 st.sidebar.markdown("# Main Page")
@@ -82,7 +81,7 @@ with row4_2:
     st.markdown("TBD")
 
 row5_1, row5_2 = st.columns(
-    [3.5,2], gap="small"
+    [3.5,3], gap="small"
 )
 with row5_1:
     st.subheader("What program has the highest average engagement?")
