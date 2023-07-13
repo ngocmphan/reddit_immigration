@@ -64,7 +64,7 @@ with row3_1:
 
 with row3_2:
     st.subheader("Changes of negative sentiment by year")
-    fig = px.line(all_post_negative_scores, x='Year', y='sentiment_negative', color='Program', title='Negative sentiment by year and by program')
+    fig = px.line(all_post_negative_scores, x='Year', y='negative_scores', color='Program', title='Negative sentiment by year and by program')
     st.plotly_chart(fig, theme='streamlit', user_container_width=True)
     st.markdown("TBD")
 
