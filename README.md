@@ -1,6 +1,6 @@
 # Reddit Immigration
 
-## Summary Result Dashboard
+## Result Summary Dashboard
 https://redditimmigration.streamlit.app/
 
 ## Topic
