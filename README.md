@@ -1,7 +1,7 @@
 # Reddit Immigration
 
 ## Result Summary Dashboard
-[Summary Dashboard](https://redditimmigration.streamlit.app/){="_blank"}
+<a href="https://redditimmigration.streamlit.app/" target="_blank">New Tab</a>
 
 ## Topic
 The topic of the project is to explore the issues and topics discussed on Reddit relating to immigrating to Canada. Immigration here can relate to the early inquiring stage, applying stage, processing stage, and obtaining results stage. 
