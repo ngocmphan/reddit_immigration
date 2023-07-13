@@ -26,6 +26,9 @@ row0_spacer1, row0_1 = st.columns(
 
 row0_1.title("Analyzing Canadian immigration programs pain points & questions submitted on Reddit")
 
+st.subtitle("Author: Alicia Ngoc Phan")
+st.subtitle("Project timeline: Analysis from Feb 2013 - March 2023 for ImmigrationCanada subreddit."
+
 row1_spacer1, row1_1, row1_spacer2 = st.columns((0.1, 3.2, 0.1))
 
 with row1_1:
