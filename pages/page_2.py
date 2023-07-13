@@ -8,24 +8,24 @@ from PIL import Image
 
 
 # Import data
-df_all_count = pd.read_csv("df_all_count.csv")
-trend_month_all = pd.read_csv("trend_month_all.csv")
-total_comments_year = pd.read_csv("total_comments_year.csv")
-df_avg_comments = pd.read_csv("df_avg_comments.csv")
-df_all_adj = pd.read_csv("df_all_adj.csv")
-all_post_negative_scores = pd.read_csv("all_post_negative_scores.csv")
-apps_received_stats = pd.read_csv("apps_received_stats.csv")
-pr_intake = pd.read_csv("pr_intake.csv")
-visitor_intake = pd.read_csv("visitor_intake.csv")
-trv_intake = pd.read_csv("trv_intake.csv")
-citizenship_intake = pd.read_csv("citizenship_intake.csv")
+df_all_count = pd.read_csv("/dashboard/df_all_count.csv")
+trend_month_all = pd.read_csv("/dashboard/trend_month_all.csv")
+total_comments_year = pd.read_csv("/dashboard/total_comments_year.csv")
+df_avg_comments = pd.read_csv("/dashboard/df_avg_comments.csv")
+df_all_adj = pd.read_csv("/dashboard/df_all_adj.csv")
+all_post_negative_scores = pd.read_csv("/dashboard/all_post_negative_scores.csv")
+apps_received_stats = pd.read_csv("/dashboard/apps_received_stats.csv")
+pr_intake = pd.read_csv("/dashboard/pr_intake.csv")
+visitor_intake = pd.read_csv("/dashboard/visitor_intake.csv")
+trv_intake = pd.read_csv("/dashboard/trv_intake.csv")
+citizenship_intake = pd.read_csv("/dashboard/citizenship_intake.csv")
 
 # Import images
-study_permit = Image.open('study_permit_negative.png')
-work_permit = Image.open('work_permit_negative.png')
-express_entry = Image.open('express_entry_negative.png')
-sponsorship = Image.open('sponsorship_negative.png')
-quebec = Image.open('quebec_negative.png')
+study_permit = Image.open('/dashboard/study_permit_negative.png')
+work_permit = Image.open('/dashboard/work_permit_negative.png')
+express_entry = Image.open('/dashboard/express_entry_negative.png')
+sponsorship = Image.open('/dashboard/sponsorship_negative.png')
+quebec = Image.open('/dashboard/quebec_negative.png')
 
 # Page 2
 st.markdown("# Sentiment Analysis & Pain Points")
