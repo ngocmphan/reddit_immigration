@@ -1,5 +1,8 @@
 # Reddit Immigration
 
+## Summary Result Dashboard
+https://redditimmigration.streamlit.app/
+
 ## Topic
 The topic of the project is to explore the issues and topics discussed on Reddit relating to immigrating to Canada. Immigration here can relate to the early inquiring stage, applying stage, processing stage, and obtaining results stage. 
 
@@ -41,4 +44,8 @@ The following variables are used for analysis in the project:
 * Topics that are considered controversial, which might indicate unclear instructions and lack of resource (all time, by year, current year)
 * Which part of the process is the pain point? Ranking by issues. 
 * Which program requires the most improvement? Number of applications and analysis of pain points. 
+
+### Visualization deliverable: Summary dashboard
+Please refer to the Summary dashboard as follows: https://redditimmigration.streamlit.app/
+
 
