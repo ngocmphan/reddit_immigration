@@ -72,10 +72,10 @@ with row5_2:
     st.subheader("Highest negative sentiment scores sum?")
     fig = px.histogram(df_all_adj, x='link_flair_text', y='sentiment_negative', title='Histogram of sum negative sentiment')
     st.plotly_chart(fig, theme='streamlit', user_container_width=True)
-    st.markdown("Overall, the sum of negative sentiment is highest for Study Permit; this is due to the fact Study Permit has significantly higher number of submissions than other categories. Similarly, Work permit, Express Entry and Sponsorship categories have high sum of negative sentiment."
+    st.markdown("Overall, the sum of negative sentiment is highest for Study Permit; this is due to the fact Study Permit has significantly higher number of submissions than other categories. Similarly, Work permit, Express Entry and Sponsorship categories have high sum of negative sentiment.")
 
  
-line3_spacer3, line3_1 = st.columns((0.1, 1))
+line3_spacer1, line3_1 = st.columns((0.1, 1))
 
 with line3_1:
     st.subheader(
@@ -116,16 +116,16 @@ with row5_2:
     st.plotly_chart(fig, theme='streamlit', user_container_width=True)
     st.markdown("Overall, the applications received for citizenship are higher in 2022. There is usually a dip in April, with an increase gradually in the rest of the year.")
 
-line3_spacer1, line3_1 = st.columns((0.1, 1))
+line5_spacer1, line5_1 = st.columns((0.1, 1))
 
-with line3_1:
+with line5_1:
     st.subheader(
         "Process Pain points: Extract repeated words in the submissions"
     )
 
-line3_spacer2, line3_1 = st.columns((0.1, 1))
+line6_spacer2, line6_1 = st.columns((0.1, 1))
 
-with line3_1:
+with line6_1:
     st.markdown("Utilize WordCloud to show the words that have highest repetition in the submissions with negative sentiment scores higher than its respective category average.")
 
     
