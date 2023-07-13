@@ -27,7 +27,7 @@ row0_spacer1, row0_1 = st.columns(
 row0_1.title("Analyzing Canadian immigration programs pain points & questions submitted on Reddit")
 
 st.markdown("Author: Alicia Ngoc Phan")
-st.markdown("Project timeline: Analysis from Feb 2013 - March 2023 for ImmigrationCanada subreddit.")
+st.markdown("Project completed: July 2023")
 
 row1_spacer1, row1_1, row1_spacer2 = st.columns((0.1, 3.2, 0.1))
 
@@ -35,6 +35,8 @@ with row1_1:
     st.markdown(
         "Hi! Welcome to Reddit Immigration Canada project. The project aims to explore issues and topics discussed on Reddit relating to immigration to Canada or any immigration related processes. We will be looking at number of Reddit submissions by year and by immigration programs, their respective engagements, and conduct sentiment analysis to identify the sentiment and pain points for each program. The timeline of analysis is Feb 2013 - March 2023"
     )
+    st.markdown("The main page of the project will include analysis of Reddit submissions and engagement rates")
+    st.markdown("Page 2 will include sentiment analysis and pain points identification.")
     
 line1_spacer1, line1_1 = st.columns((0.1, 1))
 
