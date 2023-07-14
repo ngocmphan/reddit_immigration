@@ -47,7 +47,7 @@ with line2_1:
     st.markdown("Please click on the expand button for more information of the charts")
 
 st.subheader("What is the overall sentiment of the submissions by program?")
-fig_sentiment = px.bar(df_sentiment_all, x='Program', y=['sentiment_neutral', 'sentiment_negative', 'sentiment_positive'], title='Mean sentiment of submissions by program')
+fig_sentiment = px.bar(df_sentiment_all, x='Program', y=['sentiment_neutral', 'sentiment_positive', 'sentiment_negative'], title='Mean sentiment of submissions by program')
 st.plotly_chart(fig_sentiment, theme='streamlit', user_container_width=True, config=config)
     
 row3_1, row3_2 = st.columns([3,1.1], gap="small")
