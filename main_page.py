@@ -35,8 +35,9 @@ with row1_1:
     st.markdown(
         "Hi! Welcome to Reddit Immigration Canada project. The project aims to explore issues and topics discussed on Reddit relating to immigration to Canada or any immigration related processes. We will be looking at number of Reddit submissions by year and by immigration programs, their respective engagements, and conduct sentiment analysis to identify the sentiment and pain points for each program. The timeline of analysis is Feb 2013 - March 2023"
     )
-    st.markdown("The main page of the project will include analysis of Reddit submissions and engagement rates")
-    st.markdown("Page 2 will include sentiment analysis and pain points identification.")
+    st.markdown("Main page: Analysis of Reddit submissions and engagement rates")
+    st.markdown("Page 2: Sentiment analysis and pain points identification.")
+    st.markdown("Page 3: References, Data Sources, and Data Limitation")
     
 line1_spacer1, line1_1 = st.columns((0.1, 1))
 

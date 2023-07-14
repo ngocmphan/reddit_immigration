@@ -19,6 +19,7 @@ st.markdown("## Tools")
 
 st.markdown("- Pandas")
 st.markdown("- Plotly")
+st.markdown("- Seaborn")
 st.markdown("- Streamlit")
 st.markdown("- WordCloud")
 st.markdown("- PMAW - Pushift Multithread API Wrapper")
@@ -59,5 +60,6 @@ st.markdown("##### 4. Source countries - New Canadian Citizens (in Persons) by M
 
 st.markdown("The following variables were used: Year, Month, App_received (Applications received")
 
-st.markdown("### Data Limitation")
+st.markdown("### Data Limitation & Other considerations")
 st.markdown("Due to the amount of data retrieved for the period 2012-2023, we noted that there is potential missing data in the Reddit Immigration data extraction. We noted that the number of submissions per month has some discrepancies with the number of submissions found on Reddit. However, the amount of data retrieved is sufficient to paint a broad picture of the type of questions and the demands of specific immigration program processes.")
+st.markdown("The following dashboard is a summary of the results obtained. For more detailed analysis including the reasoning, data cleaning and data transformation, please visit Immigration_Canada_Analysis.ipynb on reddit_immigration project Github page: https://github.com/ngocmphan/reddit_immigration")
