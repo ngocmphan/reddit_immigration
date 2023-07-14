@@ -4,7 +4,9 @@ import pandas as pd
 import plotly.express as px
 import requests
 import streamlit as st
-
+config = {'scrollZoom':False, 
+         "showAxisDragHandles": False,
+         "showAxisRangeEntryBoxes":False}
 
 # Import data
 df_all_count = pd.read_csv("dashboard/df_all_count.csv")
@@ -56,9 +58,7 @@ row3_1, row3_2 = st.columns([3,1.1], gap="small")
 with row3_1:
     st.subheader("How submission per program changed by year?")
     fig = px.line(df_all_count, x='Year', y='Submission counts', color="Program", title='Submissions by program and by year')
-    fig.layout.xaxis.fixedrange = True
-    fig.layout.yaxis.fixedrange = True
-    st.plotly_chart(fig, theme='streamlit', user_container_width=True)
+    st.plotly_chart(fig, theme='streamlit', user_container_width=True, config=config)
     st.markdown(
     "In general, the submissions for each program increased from 2013 to 2023. In addition, Study Permit is the category with the highest submissions in all of the years. Noted that some of the category submissions peaked in 2020, and later in 2021. "
     )
@@ -68,9 +68,7 @@ with row3_2:
     st.subheader("Which month has the most submission?")
     fig = px.line(trend_month_all, x='Month', y="Submission counts", color="Program", title="Number of submissions monthly by program")
     fig.update_layout(xaxis={"dtick":1})
-    fig.layout.xaxis.fixedrange = True
-    fig.layout.yaxis.fixedrange = True
-    st.plotly_chart(fig, theme="streamlit", user_container_width=True)
+    st.plotly_chart(fig, theme="streamlit", user_container_width=True, config=config)
     st.markdown(
     "Overall, the number of submissions monthly increased and peaked in December. Noted that there is issue in the Reddit data extracted. Please refer to data source limitation section above."
     )
@@ -81,17 +79,13 @@ row4_1, row4_2 = st.columns([2,1.1], gap='small'
 with row4_1:
     st.subheader("Which program has the most submission?")
     fig = px.bar(df_all_count, x='Submission counts', y='Program', title="Total submissions per program", orientation='h')
-    fig.layout.xaxis.fixedrange = True
-    fig.layout.yaxis.fixedrange = True
-    st.plotly_chart(fig, theme="streamlit", user_container_width=True)
+    st.plotly_chart(fig, theme="streamlit", user_container_width=True, config=config)
     st.markdown("Based on the bar chart, we noted that the following categories are among the top five highest submissions: Study permit, Express Entry, Work Permit, Sponsorship, and Visitor Visa")
 
 with row4_2:
     st.subheader("Which program has the most comments?")
     fig = px.bar(total_comments_year, x='num_comments', y='Program', title="Total comments per program", orientation='h')
-    fig.layout.xaxis.fixedrange = True
-    fig.layout.yaxis.fixedrange = True
-    st.plotly_chart(fig, theme="streamlit", user_container_width=True)
+    st.plotly_chart(fig, theme="streamlit", user_container_width=True, config=config)
     st.markdown("Based on the bar chart, Study permit has the highest engagement or the total comments. The remaining top engagements are: Express Entry, Sponsorship and Work Permit. Noted that Study Permit has significantly higher engagement with more than 70,000 comments.")
 
 row5_1, row5_2 = st.columns(
@@ -100,17 +94,13 @@ row5_1, row5_2 = st.columns(
 with row5_1:
     st.subheader("What program has the highest average engagement?")
     fig = px.bar(df_avg_comments, x='avg_comments', y='Program', title="Average Comments by Program", orientation='h')
-    fig.layout.xaxis.fixedrange = True
-    fig.layout.yaxis.fixedrange = True
-    st.plotly_chart(fig, theme="streamlit", user_container_width=True)
+    st.plotly_chart(fig, theme="streamlit", user_container_width=True, config=config)
     st.markdown("Please click on chart expand for more information. Although the Study permit has significantly higher comments among all categories, the average comments per post by program for study permit and work permit are close to each other at around 40 comments per post. The top three categories in comments per post are: Study Permit, Work Permit, and Express Entry.")
 
 with row5_2:
     st.subheader("Changes in engagement by year by program?")
     fig = px.line(df_avg_comments, x="Year", y="avg_comments", color="Program")
-    fig.layout.xaxis.fixedrange = True
-    fig.layout.yaxis.fixedrange = True
-    st.plotly_chart(fig, theme="streamlit", user_container_width=True)
+    st.plotly_chart(fig, theme="streamlit", user_container_width=True, config=config)
     st.markdown("There is significant changes in engagement for all immigration programs. There was a peak in engagement (comments per post) in 2019 and 2021 among the categories. In addition, there was also a dip in engagement in 2020, which could be due to the pandemic.")
 
 
