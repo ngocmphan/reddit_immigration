@@ -171,5 +171,5 @@ st.subheader("Relationship between number of applications received and negative 
 fig_1 = px.scatter(apps_received_stats, x='App_received', y='sentiment_negative', color='App', marginal_x='histogram', marginal_y='histogram', title = "Relationship between number of applications received and negative sentiment")
 fig.layout.xaxis.fixedrange = True
 fig.layout.yaxis.fixedrange = True
-st.plotly_chart(fig_1, theme="streamlit", user_container_width=True, **{config=config})
+st.plotly_chart(fig_1, theme="streamlit", user_container_width=True, config=config)
 st.markdown("There is no strong relationship between negative sentiment scores and the number of applications received.")
