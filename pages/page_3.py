@@ -22,14 +22,14 @@ st.markdown("- Plotly")
 st.markdown("- Streamlit")
 st.markdown("- WordCloud")
 st.markdown("- PMAW - Pushift Multithread API Wrapper")
-st.markdown("- PRAW - Pushift Reddit API Wrapper")
+st.markdown("- PRAW - Python Reddit API Wrapper")
 st.markdown("- NLTK Vader")
 
 st.markdown("## Data Sources & Data Limitation")
 st.markdown("### Reddit Immigration data")
 
 
-st.markdown("The data is obtained from Reddit directly through the use of Reddit API. The project used PMAW and PRAW to have access to Reddit API. The following variables are used for the project:")
+st.markdown("The data is obtained from Reddit directly through the use of Reddit API. The project used PMAW and PRAW to have access to Reddit API. The period under examination is Feb 2013 - Mar 2023. The total observations for the all data extracted were 63,217; however, after data cleaning and data transformation, the total observations were reduced to 39,058 submissions. The following variables are used for the project:")
 st.markdown("- selftext: the content of the original post")
 st.markdown("- author_fullname: author name account")
 st.markdown("- title: title of the post")
@@ -42,7 +42,7 @@ st.markdown("- id: unique ID of the post")
 st.markdown("Please refer to the Immigration_Canada_Data_Extraction.ipynb for the process of data extraction using Reddit API.")
 
 st.markdown("### Applications received by Immigration program - IRCC")
-st.markdown("The datasets were obtained from IRCC, please refer to [1] IRCC, Operational Processing - Monthly IRCC reference above. The following datasets were obtained:")
+st.markdown("The datasets were obtained from IRCC, please refer to [1] IRCC, Operational Processing - Monthly IRCC reference above. The data available were monthly applications number from the period of Jan 2020 - May 2023. The following datasets were obtained:")
 
 st.markdown("##### 1. Source countries - Applications Received for Permanent Residency (in Persons) by Month")
 st.markdown("The following variables were used: Year, Month, App_received (Applications received)")
@@ -60,4 +60,4 @@ st.markdown("##### 4. Source countries - New Canadian Citizens (in Persons) by M
 st.markdown("The following variables were used: Year, Month, App_received (Applications received")
 
 st.markdown("### Data Limitation")
-st.markdown("")
+st.markdown("Due to the amount of data retrieved for the period 2012-2023, we noted that there is potential missing data in the Reddit Immigration data extraction. We noted that the number of submissions per month has some discrepancies with the number of submissions found on Reddit. However, the amount of data retrieved is sufficient to paint a broad picture of the type of questions and the demands of specific immigration program processes.")
