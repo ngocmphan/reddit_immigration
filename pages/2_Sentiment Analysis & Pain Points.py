@@ -21,6 +21,7 @@ pr_intake = pd.read_csv("dashboard/pr_intake.csv")
 visitor_intake = pd.read_csv("dashboard/visitor_intake.csv")
 trv_intake = pd.read_csv("dashboard/trv_intake.csv")
 citizenship_intake = pd.read_csv("dashboard/citizenship_intake.csv")
+df_sentiment_all = pd.read_csv("dashboard/df_sentiment_all.csv")
 
 # Import images
 study_permit = Image.open('dashboard/study_permit_negative.png')
@@ -44,7 +45,10 @@ line2_spacer2, line2_1 = st.columns((0.1, 1))
 
 with line2_1:
     st.markdown("Please click on the expand button for more information of the charts")
-    
+
+st.subheader("What is the overall sentiment of the submissions by program?")
+fig_sentiment = px.bar(df_sentiment_all, x='Program', y=['sentiment_neutral', 'sentiment_negative', 'sentiment_positive'], title='Mean sentiment of submissions by program')
+st.plotly_chart(fig_sentiment, theme='streamlit', user_container_width=True, config=config)
     
 row3_1, row3_2 = st.columns([3,1.1], gap="small")
 
