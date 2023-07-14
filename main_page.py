@@ -4,9 +4,10 @@ import pandas as pd
 import plotly.express as px
 import requests
 import streamlit as st
-config = {'scrollZoom':False, 
+config = {'scrollZoom': False, 
          "showAxisDragHandles": False,
-         "showAxisRangeEntryBoxes":False}
+         "showAxisRangeEntryBoxes": False, 
+         "dragMode":False}
 
 # Import data
 df_all_count = pd.read_csv("dashboard/df_all_count.csv")
