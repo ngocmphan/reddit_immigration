@@ -9,9 +9,9 @@ st.sidebar.markdown("# Page 3")
 st.markdown("## References")
 
 
-st.markdown("Immigration, Refugees and Citizenship Canada. Operational Processing - Monthly IRCC Updates. Extracted on July 2023 via the following link: https://open.canada.ca/data/en/dataset/9b34e712-513f-44e9-babf-9df4f7256550")
+st.markdown("[1] Immigration, Refugees and Citizenship Canada. Operational Processing - Monthly IRCC Updates. Extracted on July 2023 via the following link: https://open.canada.ca/data/en/dataset/9b34e712-513f-44e9-babf-9df4f7256550")
 
-st.markdown("Hutto, C.J. & Gilbert, E.E. (2014). VADER: A Parsimonious Rule-based Model for Sentiment Analysis of Social Media Text. Eighth International Conference on Weblogs and Social Media (ICWSM-14). Ann Arbor, MI, June 2014.")
+st.markdown("[2] Hutto, C.J. & Gilbert, E.E. (2014). VADER: A Parsimonious Rule-based Model for Sentiment Analysis of Social Media Text. Eighth International Conference on Weblogs and Social Media (ICWSM-14). Ann Arbor, MI, June 2014.")
 
 
 st.markdown("## Tools")
@@ -39,22 +39,25 @@ st.markdown("- upvote_ratio: The ratio of the upvote of the post")
 st.markdown("- created_utc: Post created time based on Unix timestamp")
 st.markdown("num_comments: Number of comments of the post")
 st.markdown("- id: unique ID of the post")
-
+st.markdown("Please refer to the Immigration_Canada_Data_Extraction.ipynb for the process of data extraction using Reddit API.")
 
 st.markdown("### Applications received by Immigration program - IRCC")
-st.markdown("The datasets were obtained from IRCC. The following datasets were obtained:")
+st.markdown("The datasets were obtained from IRCC, please refer to [1] IRCC, Operational Processing - Monthly IRCC reference above. The following datasets were obtained:")
 
-st.markdown("#### 1. Source countries - Applications Received for Permanent Residency (in Persons) by Month")
+st.markdown("##### 1. Source countries - Applications Received for Permanent Residency (in Persons) by Month")
 st.markdown("The following variables were used: Year, Month, App_received (Applications received)")
 
-st.markdown("#### 2. Source countries - Applications Received for Temporary Residents (in Persons) by Month")
+st.markdown("##### 2. Source countries - Applications Received for Temporary Residents (in Persons) by Month")
 
 st.markdown("The following variables were used: Year, Month, App_received (Applications received)")
 
-st.markdown("#### 3. Source countries - Visitor Visas Approved (in Persons) by Month")
+st.markdown("##### 3. Source countries - Visitor Visas Approved (in Persons) by Month")
 
 st.markdown("The following variables were used: Year, Month, App_received (Applications received")
 
-st.markdown("#### 4. Source countries - New Canadian Citizens (in Persons) by Month")
+st.markdown("##### 4. Source countries - New Canadian Citizens (in Persons) by Month")
 
 st.markdown("The following variables were used: Year, Month, App_received (Applications received")
+
+st.markdown("### Data Limitation")
+st.markdown("")
