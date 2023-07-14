@@ -49,7 +49,7 @@ with line2_1:
 
 st.subheader("What is the overall sentiment of the submissions by program?")
 fig_sentiment = px.bar(df_sentiment_all, x='Program', y=['sentiment_neutral', 'sentiment_positive', 'sentiment_negative'], title='Mean sentiment of submissions by program')
-st.plotly_chart(fig_sentiment, theme='streamlit', user_container_width=True, config=config)
+st.plotly_chart(fig_sentiment, theme='streamlit', user_container_width=True, **{config=config})
     
 row3_1, row3_2 = st.columns([3,1.1], gap="small")
 
@@ -58,7 +58,7 @@ with row3_1:
     fig = px.box(df_all_adj, x='sentiment_negative', y='link_flair_text', title="Sentiment Boxplot by Program")
     fig.layout.xaxis.fixedrange = True
     fig.layout.yaxis.fixedrange = True
-    st.plotly_chart(fig, theme='streamlit', user_container_width=True, config=config)
+    st.plotly_chart(fig, theme='streamlit', user_container_width=True, **{config=config})
     st.markdown(
     "The negative sentiment shows the differences in average negative sentiment with higher scores for the following program: Quebec, Study Permit, Work Permit, Visitor Visa, and Citizenship. Noted that overall all the programs have low negative sentiment with the scores lower than 0.15."
     )
@@ -68,7 +68,7 @@ with row3_2:
     fig = px.line(all_post_negative_scores, x='Year', y='negative_scores', color='Program', title='Negative sentiment by year and by program')
     fig.layout.xaxis.fixedrange = True
     fig.layout.yaxis.fixedrange = True
-    st.plotly_chart(fig, theme='streamlit', user_container_width=True, config=config)
+    st.plotly_chart(fig, theme='streamlit', user_container_width=True, **{config=config})
     st.markdown("The negative sentiment for each program has fluctuations. In general, there were dip in negative sentiment in 2020 and 2022, with an increase in negative sentiment in 2021. Based on the current line chart and the total of submissions dip in 2020 due to pandemic, it is reasonable that the negative sentiment also dipped.")
 
 row5_1, row5_2 = st.columns([3,1.1], gap="small")
@@ -78,7 +78,7 @@ with row5_1:
     fig = px.histogram(df_all_adj, x='link_flair_text', y='sentiment_negative', title="Histogram of average negative sentiment", histfunc='avg')
     fig.layout.xaxis.fixedrange = True
     fig.layout.yaxis.fixedrange = True
-    st.plotly_chart(fig, theme='streamlit', user_container_width=True, config=config)
+    st.plotly_chart(fig, theme='streamlit', user_container_width=True, **{config=config})
     st.markdown("Please click on the bar chart expand for more info. Quebec has significantly higher average negative sentiment than other categories. The remaining categories have average negative sentiment close to each other with leading categories include: Study Permit, Visitor Visa, Work Permit, and Visitor Visa.")
     
 with row5_2:
@@ -86,7 +86,7 @@ with row5_2:
     fig = px.histogram(df_all_adj, x='link_flair_text', y='sentiment_negative', title='Histogram of sum negative sentiment')
     fig.layout.xaxis.fixedrange = True
     fig.layout.yaxis.fixedrange = True
-    st.plotly_chart(fig, theme='streamlit', user_container_width=True, config=config)
+    st.plotly_chart(fig, theme='streamlit', user_container_width=True, **{config=config})
     st.markdown("Overall, the sum of negative sentiment is highest for Study Permit; this is due to the fact Study Permit has significantly higher number of submissions than other categories. Similarly, Work permit, Express Entry and Sponsorship categories have high sum of negative sentiment.")
 
  
@@ -109,7 +109,7 @@ with row4_1:
     fig = px.line(pr_intake, x='Month', y='App_received', color='Year', title="Applications received for PR")
     fig.layout.xaxis.fixedrange = True
     fig.layout.yaxis.fixedrange = True
-    st.plotly_chart(fig, theme="streamlit", user_container_width=True, config=config)
+    st.plotly_chart(fig, theme="streamlit", user_container_width=True, **{config=config})
     st.markdown("Applications received for Permanent Resident was overall higher in 2021 than in other years. In addition, the number of applications peaked in May in 2021. Applications received for PR for other years (beside 2021) remained lower than 40,000 applications.")
 
 with row4_2:
@@ -117,7 +117,7 @@ with row4_2:
     fig = px.line(trv_intake, x='Month', y='App_received', color='Year', title="Applications received for TRV")
     fig.layout.xaxis.fixedrange = True
     fig.layout.yaxis.fixedrange = True
-    st.plotly_chart(fig, theme="streamlit", user_container_width=True, config=config)
+    st.plotly_chart(fig, theme="streamlit", user_container_width=True, **{config=config})
     st.markdown("In general, applications received for temporary resident is overall higher in 2022 with a sign of continuation in 2023 (with available data). Noted that overall, there is a higher number of applications from March to June, with slight increase in September to November.")
     
 row5_1, row5_2 = st.columns([3,1.1], gap='small')
@@ -127,7 +127,7 @@ with row5_1:
     fig = px.line(visitor_intake, x='Month', y='App_received', color='Year', title='Applications received for Visitor Visa')
     fig.layout.xaxis.fixedrange = True
     fig.layout.yaxis.fixedrange = True
-    st.plotly_chart(fig, theme="streamlit", user_container_width=True, config=config)
+    st.plotly_chart(fig, theme="streamlit", user_container_width=True, **{config=config})
     st.markdown("Applications received for visitor visa increased are overall higher in 2022 than in 2020 and 2021, with significantly higher number of applications in 2023.")
     
 with row5_2:
@@ -136,7 +136,7 @@ with row5_2:
     fig.layout.xaxis.fixedrange = True
     fig.layout.yaxis.fixedrange = True
     fig.update_layout(xaxis={"dtick":1})
-    st.plotly_chart(fig, theme='streamlit', user_container_width=True, config=config)
+    st.plotly_chart(fig, theme='streamlit', user_container_width=True, **{config=config})
     st.markdown("Overall, the applications received for citizenship are higher in 2022. There is usually a dip in April, with an increase gradually in the rest of the year.")
 
 line5_spacer1, line5_1 = st.columns((0.1, 1))
@@ -171,5 +171,5 @@ st.subheader("Relationship between number of applications received and negative 
 fig_1 = px.scatter(apps_received_stats, x='App_received', y='sentiment_negative', color='App', marginal_x='histogram', marginal_y='histogram', title = "Relationship between number of applications received and negative sentiment")
 fig.layout.xaxis.fixedrange = True
 fig.layout.yaxis.fixedrange = True
-st.plotly_chart(fig_1, theme="streamlit", user_container_width=True, config=config)
+st.plotly_chart(fig_1, theme="streamlit", user_container_width=True, **{config=config})
 st.markdown("There is no strong relationship between negative sentiment scores and the number of applications received.")
