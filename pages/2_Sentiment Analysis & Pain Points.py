@@ -69,14 +69,14 @@ with line1_1:
 line2_spacer2, line2_1 = st.columns((0.1, 1))
 
 with line2_1:
-    st.markdown("NLTK Vader was used to conduct sentiment analysis on all of the submissions to subreddit. Each post was analyzed and given output of percentage of language with sentiment associated with positive, neutral, and negative sentiment. In addition, we further identified the posts with negative sentiment scores higher than the mean negative sentiment of respective immigration program. Subsequently, WordCloud was used to identify repeated words in these submissions to identify the pain points of the process. ")
+    st.markdown("NLTK Vader was used to conduct sentiment analysis on all of the submissions to subreddit. Each post was analyzed and given output of percentage of language with sentiment associated with positive, neutral, and negative sentiment (with full score out of 1). In addition, we further identified the posts with negative sentiment scores higher than the mean negative sentiment of respective immigration program. Subsequently, WordCloud was used to identify repeated words in these submissions to identify the pain points of the process. ")
     st.markdown("Please click on the expand button for more information of the charts")
 
 st.subheader("What is the overall sentiment of the submissions by program?")
 fig_sentiment = px.bar(df_sentiment_all, x='Program', y=['sentiment_neutral', 'sentiment_positive', 'sentiment_negative'], title='Mean sentiment of submissions by program')
 st.plotly_chart(fig_sentiment, theme='streamlit', user_container_width=True, config=config)
     
-row3_1, row3_2 = st.columns([3,1.1], gap="small")
+row3_1, row3_space, row3_2 = st.columns([2,1,2], gap="small")
 
 with row3_1:
     st.subheader("Is there any difference in negative sentiment by program?")
@@ -90,13 +90,15 @@ with row3_1:
 
 with row3_2:
     st.subheader("Negative sentiment by year")
+    st.markdown("   ")
+    st.markdown("  ")
     fig = px.line(all_post_negative_scores, x='Year', y='negative_scores', color='Program', title='Negative sentiment by year and by program')
     fig.update_xaxes(fixedrange=True)
     fig.update_yaxes(fixedrange=True)
     st.plotly_chart(fig, theme='streamlit', user_container_width=True, config=config)
     st.markdown("The negative sentiment for each program has fluctuations. In general, there were dip in negative sentiment in 2020 and 2022, with an increase in negative sentiment in 2021. Based on the current line chart and the total of submissions dip in 2020 due to pandemic, it is reasonable that the negative sentiment also dipped.")
 
-row5_1, row5_2 = st.columns([3,1.1], gap="small")
+row5_1, row5_space, row5_2 = st.columns([2,2,2], gap="small")
 
 with row5_1: 
     st.subheader("Which program has the highest average negative sentiment scores?")
@@ -108,6 +110,8 @@ with row5_1:
     
 with row5_2:
     st.subheader("Highest negative sentiment scores sum?")
+    st.markdown("   ")
+    st.markdown("  ")
     fig = px.histogram(df_all_adj, x='link_flair_text', y='sentiment_negative', title='Histogram of sum negative sentiment')
     fig.update_xaxes(fixedrange=True)
     fig.update_yaxes(fixedrange=True)
@@ -127,7 +131,7 @@ line4_spacer4, line4_1 = st.columns((0.1, 1))
 with line4_1:
     st.markdown("Noted that some of the category in Reddit will be aggregated due to the aggregation of government data collection: PR (Express Entry, Sponsorship, PNP, Quebec); Temporary resident (Study Permit, Work Permit, Working Holiday); Visitor (Visitor visa); Citizenship (Citizenship)")
     
-row4_1, row4_2 = st.columns([3,1.1], gap='small')
+row4_1, row4_space, row4_2 = st.columns([2,1,2], gap='small')
 
 with row4_1:
     st.subheader("Applications received for Permanent Resident")
@@ -145,7 +149,7 @@ with row4_2:
     st.plotly_chart(fig, theme="streamlit", user_container_width=True, config=config)
     st.markdown("In general, applications received for temporary resident is overall higher in 2022 with a sign of continuation in 2023 (with available data). Noted that overall, there is a higher number of applications from March to June, with slight increase in September to November.")
     
-row5_1, row5_2 = st.columns([3,1.1], gap='small')
+row5_1, row5_space, row5_2 = st.columns([2,1,2], gap='small')
 
 with row5_1:
     st.subheader("Applications received for Visitor Visa")

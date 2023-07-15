@@ -80,7 +80,7 @@ line2_spacer2, line2_1 = st.columns((0.1, 1))
 with line2_1:
     st.markdown("Please click on the expand button for more information of the charts")
     
-row3_1, row3_2 = st.columns([3,1.1], gap="small")
+row3_1, row3_space, row3_2 = st.columns([3,1.8,2], gap="small")
     
 with row3_1:
     st.subheader("How submission per program changed by year?")
@@ -89,7 +89,7 @@ with row3_1:
     fig.update_yaxes(fixedrange=True)
     st.plotly_chart(fig, theme='streamlit', user_container_width=True, config=config)
     st.markdown(
-    "In general, the submissions for each program increased from 2013 to 2023. In addition, Study Permit is the category with the highest submissions in all of the years. Noted that some of the category submissions peaked in 2020, and later in 2021. "
+    "Please click on the chart expand for full details of the trend. In general, the submissions for each program increased from 2013 to 2023. In addition, Study Permit is the category with the highest submissions in all of the years. Noted that some of the category submissions peaked in 2020, and later in 2021. "
     )
 
 
@@ -104,11 +104,13 @@ with row3_2:
     "Overall, the number of submissions monthly increased and peaked in December. Noted that there is issue in the Reddit data extracted. Please refer to data source limitation section above."
     )
 
-row4_1, row4_2 = st.columns([2,1.1], gap='small'
+row4_1, row4_space, row4_2 = st.columns([3,1.8, 2], gap='small'
 )
 
 with row4_1:
     st.subheader("Which program has the most submission?")
+    st.markdown(" ")
+    st.markdown("  ")
     fig = px.bar(df_all_count, x='Submission counts', y='Program', title="Total submissions per program", orientation='h')
     fig.update_xaxes(fixedrange=True)
     fig.update_yaxes(fixedrange=True)
@@ -123,11 +125,13 @@ with row4_2:
     st.plotly_chart(fig, theme="streamlit", user_container_width=True, config=config)
     st.markdown("Based on the bar chart, Study permit has the highest engagement or the total comments. The remaining top engagements are: Express Entry, Sponsorship and Work Permit. Noted that Study Permit has significantly higher engagement with more than 70,000 comments.")
 
-row5_1, row5_2 = st.columns(
-    [3.5,3], gap="small"
+row5_1, row5_space, row5_2 = st.columns(
+    [3,1.8,2], gap="small"
 )
 with row5_1:
     st.subheader("What program has the highest average engagement?")
+    st.markdown("  ")
+    st.markdown(" ")
     fig = px.bar(df_avg_comments, x='avg_comments', y='Program', title="Average Comments by Program", orientation='h')
     fig.update_xaxes(fixedrange=True)
     fig.update_yaxes(fixedrange=True)
@@ -136,7 +140,7 @@ with row5_1:
 
 with row5_2:
     st.subheader("Changes in engagement by year by program?")
-    fig = px.line(df_avg_comments, x="Year", y="avg_comments", color="Program")
+    fig = px.line(df_avg_comments, x="Year", y="avg_comments", color="Program", title = "Changes in average comments per post by program by year")
     fig.update_xaxes(fixedrange=True)
     fig.update_yaxes(fixedrange=True)
     st.plotly_chart(fig, theme="streamlit", user_container_width=True, config=config)
