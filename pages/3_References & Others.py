@@ -1,5 +1,28 @@
 # Import libraries
 import streamlit as st
+def switch_page(page_name: str):
+    from streamlit.runtime.scriptrunner import RerunData, RerunException
+    from streamlit.source_util import get_pages
+
+    def standardize_name(name: str) -> str:
+        return name.lower().replace("_", " ")
+
+    page_name = standardize_name(page_name)
+
+    pages = get_pages("streamlit_app.py")  # OR whatever your main page is called
+
+    for page_hash, config in pages.items():
+        if standardize_name(config["page_name"]) == page_name:
+            raise RerunException(
+                RerunData(
+                    page_script_hash=page_hash,
+                    page_name=page_name,
+                )
+            )
+
+    page_names = [standardize_name(config["page_name"]) for config in pages.values()]
+
+    raise ValueError(f"Could not find page {page_name}. Must be one of {page_names}")
 
 
 # Page 3: Data sources, references and data limitation
@@ -63,3 +86,16 @@ st.markdown("The following variables were used: Year, Month, App_received (Appli
 st.markdown("### Data Limitation & Other considerations")
 st.markdown("Due to the amount of data retrieved for the period 2012-2023, we noted that there is potential missing data in the Reddit Immigration data extraction. We noted that the number of submissions per month has some discrepancies with the number of submissions found on Reddit. However, the amount of data retrieved is sufficient to paint a broad picture of the type of questions and the demands of specific immigration program processes.")
 st.markdown("The following dashboard is a summary of the results obtained. For more detailed analysis including the reasoning, data cleaning and data transformation, please visit Immigration_Canada_Analysis.ipynb on reddit_immigration project Github page: https://github.com/ngocmphan/reddit_immigration")
+
+
+row6_1, row_6_2 = st.columns(2)
+
+with row6_1:
+    previous_page = st.button("Previous Page")
+    if previous_page:
+        switch_page("Sentiment Analysis & Pain Points")
+        
+with row6_2: 
+    next_page = st.button("Next Page")
+    if next_page:
+        switch_page("Contact info")
