@@ -36,7 +36,7 @@ st.markdown("[Linkedin - Alicia .P](https://www.linkedin.com/in/ngocmphan/)")
 
 st.markdown("Please don't hesitate to contact me if you want to talk about the project, collaborate or discuss on different ideas. Thank you for reading.")
 
-row6_1, row_6_2 = st.columns(2)
+row6_1, row6_2 = st.columns(2)
 
 with row6_1:
     previous_page = st.button("Previous Page")

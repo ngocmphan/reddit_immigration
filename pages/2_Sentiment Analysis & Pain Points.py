@@ -199,7 +199,7 @@ fig.update_yaxes(fixedrange=True)
 st.plotly_chart(fig_1, theme="streamlit", user_container_width=True, config=config)
 st.markdown("There is no strong relationship between negative sentiment scores and the number of applications received.")
 
-row6_1, row_6_2 = st.columns(2)
+row6_1, row6_2 = st.columns(2)
 
 with row6_1:
     previous_page = st.button("Previous Page")

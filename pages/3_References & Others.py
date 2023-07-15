@@ -88,7 +88,7 @@ st.markdown("Due to the amount of data retrieved for the period 2012-2023, we no
 st.markdown("The following dashboard is a summary of the results obtained. For more detailed analysis including the reasoning, data cleaning and data transformation, please visit Immigration_Canada_Analysis.ipynb on reddit_immigration project Github page: https://github.com/ngocmphan/reddit_immigration")
 
 
-row6_1, row_6_2 = st.columns(2)
+row6_1, row6_2 = st.columns(2)
 
 with row6_1:
     previous_page = st.button("Previous Page")

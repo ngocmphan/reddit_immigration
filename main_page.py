@@ -142,7 +142,7 @@ with row5_2:
     st.plotly_chart(fig, theme="streamlit", user_container_width=True, config=config)
     st.markdown("There is significant changes in engagement for all immigration programs. There was a peak in engagement (comments per post) in 2019 and 2021 among the categories. In addition, there was also a dip in engagement in 2020, which could be due to the pandemic.")
 
-row6_1, row_6_2 = st.columns(2)
+row6_1, row6_2 = st.columns(2)
 with row6_2: 
     next_page = st.button("Next Page")
     if next_page:
