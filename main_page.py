@@ -7,7 +7,8 @@ import streamlit as st
 config = {'scrollZoom': False, 
          "showAxisDragHandles": False,
          "showAxisRangeEntryBoxes": False, 
-         "dragMode":False}
+         "dragMode":False, 
+         'modeBarButtonsToRemove': ['zoom', 'pan']}
 
 # Import data
 df_all_count = pd.read_csv("dashboard/df_all_count.csv")
