@@ -61,7 +61,7 @@ st.markdown("- ups: Upvote of the post")
 st.markdown("- link_flair_text: Program category of the post (Express Entry, Citizenship, Visitor Visa, Sponsorship, PNP, Meta, Public Policy Pathways, Study Permit, Work Permit, Quebec, Covid-19, Other")
 st.markdown("- upvote_ratio: The ratio of the upvote of the post")
 st.markdown("- created_utc: Post created time based on Unix timestamp")
-st.markdown("num_comments: Number of comments of the post")
+st.markdown("- num_comments: Number of comments of the post")
 st.markdown("- id: unique ID of the post")
 st.markdown("Please refer to the Immigration_Canada_Data_Extraction.ipynb for the process of data extraction using Reddit API.")
 
