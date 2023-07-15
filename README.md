@@ -40,7 +40,6 @@ The following variables are used for analysis in the project:
 * Which topics/programs have the most discussion based on timeline (all time, by year, current year)? 
 * What are the most mentioned issues in general for the Canadian Immigration application? Mentioned issues by program? (All time, by year, current year)
 * Sentimental analysis: Positive of negative review of the experience/process by program. Include analysis of sentiments per program by year. 
-* What kind of reference was linked in the post? Was it an official source? 
 * Is there specific time of the year (seasonality) that a specific program requires more attention due to the amount of questions received? 
 
 ### Point of improvements summary
