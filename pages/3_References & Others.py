@@ -45,18 +45,18 @@ st.markdown("Please refer to the Immigration_Canada_Data_Extraction.ipynb for th
 st.markdown("### Applications received by Immigration program - IRCC")
 st.markdown("The datasets were obtained from IRCC, please refer to [1] IRCC, Operational Processing - Monthly IRCC reference above. The data available were monthly applications number from the period of Jan 2020 - May 2023. The following datasets were obtained:")
 
-st.markdown("##### 1. Source countries - Applications Received for Permanent Residency (in Persons) by Month")
+st.markdown("1. Source countries - Applications Received for Permanent Residency (in Persons) by Month")
 st.markdown("The following variables were used: Year, Month, App_received (Applications received)")
 
-st.markdown("##### 2. Source countries - Applications Received for Temporary Residents (in Persons) by Month")
+st.markdown("2. Source countries - Applications Received for Temporary Residents (in Persons) by Month")
 
 st.markdown("The following variables were used: Year, Month, App_received (Applications received)")
 
-st.markdown("##### 3. Source countries - Visitor Visas Approved (in Persons) by Month")
+st.markdown("3. Source countries - Visitor Visas Approved (in Persons) by Month")
 
 st.markdown("The following variables were used: Year, Month, App_received (Applications received")
 
-st.markdown("##### 4. Source countries - New Canadian Citizens (in Persons) by Month")
+st.markdown("4. Source countries - New Canadian Citizens (in Persons) by Month")
 
 st.markdown("The following variables were used: Year, Month, App_received (Applications received")
 
