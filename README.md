@@ -11,7 +11,10 @@ The permanent residence (PR) process is a lengthy process which starts from the 
 
 As the PR process requires significant preparations, there are many questions regarding the process from applicants. The ideal option is to consult with lawyers or contract a legal firm to prepare the application on behalf of the applicant; however, this path is known for being costly. Therefore, it is very common that people would post their questions regarding the process on social media or public forums. From this, the project aims to understand the questions and concerns posted on Reddit with emphasis on common issues asked, topics mentioned and the general review of the process or point of improvements. 
 
-For the scope of the project, we focus on the data and posts for the period of 10 years: Jan 2013 - Jan 2023. 
+The PR process can include programs like Express Entry, Provincial Nomination Program (from different provinces), Public Policy Pathways. In addition to the PR process, there are also other immigration processes to obtain legal status in Canada, for example, Work permit, Study Permit or Visitor visa processes. 
+
+The time period for analysis is 10 years from 2013 to 2023, with the extraction date on March 4th, 2023 using PMAW. Noted that the ImmigrationCanada subreddit was created on February 5th, 2013, and that the Public Policy Pathway is no longer available. 
+
 
 ## Data sources and variables 
 The data is obtained from Reddit directly through the use of Reddit API. The project used PRAW - Python Reddit API Wrapper to directly access Reddit. 
