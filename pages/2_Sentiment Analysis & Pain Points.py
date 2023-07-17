@@ -144,7 +144,7 @@ with row4_1:
     fig.update_xaxes(fixedrange=True)
     fig.update_yaxes(fixedrange=True)
     st.plotly_chart(fig, theme="streamlit", user_container_width=True, config=config)
-    st.markdown("Applications received for Permanent Resident was overall higher in 2021 than in other years. In addition, the number of applications peaked in May in 2021. Applications received for PR for other years (beside 2021) remained lower than 40,000 applications.")
+    st.markdown("Applications received for Permanent Resident was overall higher in 2021 than in other years. In addition, the number of applications peaked in May in 2021. Applications received for PR for other years (beside 2021) remained lower than 40,000 applications monthly.")
 
 with row4_2:
     st.subheader("Applications received for Temporary Resident")
