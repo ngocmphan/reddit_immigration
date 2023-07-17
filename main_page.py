@@ -136,7 +136,7 @@ with row5_1:
     st.subheader("What program has the highest average engagement?")
     st.markdown("  ")
     st.markdown(" ")
-    fig = px.bar(df_avg_comments, x='avg_comments', y='Program', title="Average Comments by Program", orientation='h')
+    fig = px.bar(df_avg_comments, x='avg_comments', y='Program', title="Average Comments by Program", orientation='h',  barmode='group', histfunc='avg')
     fig.update_xaxes(fixedrange=True)
     fig.update_yaxes(fixedrange=True)
     st.plotly_chart(fig, theme="streamlit", user_container_width=True, config=config)
