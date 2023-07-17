@@ -73,7 +73,7 @@ with line2_1:
     st.markdown("Tips on viewing the visualiations:")
     st.markdown("- Please click on the expand button for more information of the charts.")
     st.markdown("- For charts with legends of different categories, click once on the category in the legend to remove the category visualization.")
-    st.markdown("- For charts with legends of difference categories, double click on the category in the legend to only view the chosen category. Double click again on the category to reset the graph.")
+    st.markdown("- For charts with legends of difference categories, double click on the category in the legend to view the isolated category. Double click again on the category to reset the graph.")
 
 st.subheader("What is the overall sentiment of the submissions by program?")
 fig_sentiment = px.bar(df_sentiment_all, x='Program', y=['sentiment_neutral', 'sentiment_positive', 'sentiment_negative'], title='Mean sentiment of submissions by program')
