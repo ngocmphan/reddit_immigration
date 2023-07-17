@@ -70,7 +70,7 @@ line2_spacer2, line2_1 = st.columns((0.1, 1))
 
 with line2_1:
     st.markdown("NLTK Vader was used to conduct sentiment analysis on all of the submissions to subreddit. Each post was analyzed and given output of percentage of language with sentiment associated with positive, neutral, and negative sentiment (with full score out of 1). In addition, we further identified the posts with negative sentiment scores higher than the mean negative sentiment of respective immigration program. Subsequently, WordCloud was used to identify repeated words in these submissions to identify the pain points of the process. ")
-    st.markdown("Tips on viewing the visualiations:
+    st.markdown("Tips on viewing the visualiations:")
     st.markdown("- Please click on the expand button for more information of the charts.")
     st.markdown("- For charts with legends of different categories, click once on the category in the legend to remove the category visualization.")
     st.markdown("- For charts with legends of difference categories, double click on the category in the legend to only view the chosen category. Double click again on the category to reset the graph.")
