@@ -78,7 +78,11 @@ with line1_1:
 line2_spacer2, line2_1 = st.columns((0.1, 1))
 
 with line2_1:
-    st.markdown("Please click on the expand button for more information of the charts")
+    st.markdown("Tips on viewing the visualiations:
+    st.markdown("- Please click on the expand button for more information of the charts.")
+    st.markdown("- For charts with legends of different categories, click once on the category in the legend to remove the category visualization.")
+    st.markdown("- For charts with legends of difference categories, double click on the category in the legend to only view the chosen category. Double click again on the category to reset the graph.")
+
     
 row3_1, row3_space, row3_2 = st.columns([3,1.8,2], gap="small")
     
