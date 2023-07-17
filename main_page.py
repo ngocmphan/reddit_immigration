@@ -58,7 +58,7 @@ row0_1.title("Analyzing Canadian immigration programs pain points & questions su
 st.markdown("Author: Alicia Ngoc Phan")
 st.markdown("Project completed: July 2023")
 
-row1_spacer1, row1_1 = st.columns((0.1, 3.2))
+row1_spacer1, row1_1 = st.columns((0.1, 1))
 
 with row1_1:
     st.markdown(
