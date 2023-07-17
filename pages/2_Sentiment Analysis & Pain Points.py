@@ -77,8 +77,8 @@ with line2_1:
 
 st.subheader("What is the overall sentiment of the submissions by program?")
 fig_sentiment = px.bar(df_sentiment_all, x='Program', y=['sentiment_neutral', 'sentiment_positive', 'sentiment_negative'], title='Mean sentiment of submissions by program')
-fig.update_xaxes(fixedrange=True)
-fig.update_yaxes(fixedrange=True)
+fig_sentiment.update_xaxes(fixedrange=True)
+fig_sentiment.update_yaxes(fixedrange=True)
 st.plotly_chart(fig_sentiment, theme='streamlit', user_container_width=True, config=config)
     
 row3_1, row3_space, row3_2 = st.columns([2,1,2], gap="small")
