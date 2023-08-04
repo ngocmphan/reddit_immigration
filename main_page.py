@@ -140,7 +140,7 @@ with row5_1:
     fig.update_xaxes(fixedrange=True)
     fig.update_yaxes(fixedrange=True)
     st.plotly_chart(fig, theme="streamlit", user_container_width=True, config=config)
-    st.markdown("Please click on chart expand for more information. Although the Study permit has significantly higher comments among all categories, the average comments per post by program for study permit and work permit are close to each other at around 40 comments per post. The top three categories in comments per post are: Study Permit, Work Permit, and Express Entry.")
+    st.markdown("Please click on chart expand for more information. Although the Study permit has significantly higher comments among all categories, the average comments per post by program for study permit and work permit are close to each other at around 4 comments per post. The top three categories in comments per post are: Study Permit, Work Permit, and Express Entry.")
 
 with row5_2:
     st.subheader("Changes in engagement by year by program?")
