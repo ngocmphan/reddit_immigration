@@ -108,7 +108,7 @@ with row3_2:
     "Overall, the number of submissions monthly increased and peaked in December. Noted that there is issue in the Reddit data extracted. Please refer to data source limitation section above."
     )
 
-row4_1, row4_space, row4_2 = st.columns([3,1.8, 2], gap='small'
+row4_1, row4_space, row4_2 = st.columns([5,1, 5], gap='small'
 )
 
 with row4_1:
