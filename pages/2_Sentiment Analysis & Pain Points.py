@@ -81,7 +81,7 @@ fig_sentiment.update_xaxes(fixedrange=True)
 fig_sentiment.update_yaxes(fixedrange=True)
 st.plotly_chart(fig_sentiment, theme='streamlit', user_container_width=True, config=config)
     
-row3_1, row3_space, row3_2 = st.columns([2,1,2], gap="small")
+row3_1, row3_space, row3_2 = st.columns([5,1,5], gap="small")
 
 with row3_1:
     st.subheader("Is there any difference in negative sentiment by program?")
@@ -103,7 +103,7 @@ with row3_2:
     st.plotly_chart(fig, theme='streamlit', user_container_width=True, config=config)
     st.markdown("The negative sentiment for each program has fluctuations. In general, there were dip in negative sentiment in 2020 and 2022, with an increase in negative sentiment in 2021. Based on the current line chart and the total of submissions dip in 2020 due to pandemic, it is reasonable that the negative sentiment also dipped.")
 
-row5_1, row5_space, row5_2 = st.columns([2,2,2], gap="small")
+row5_1, row5_space, row5_2 = st.columns([5,1,5], gap="small")
 
 with row5_1: 
     st.subheader("Which program has the highest average negative sentiment scores?")
@@ -154,7 +154,7 @@ with row4_2:
     st.plotly_chart(fig, theme="streamlit", user_container_width=True, config=config)
     st.markdown("In general, applications received for temporary resident is overall higher in 2022 with a sign of continuation in 2023 (with available data). Noted that overall, there is a higher number of applications from March to June, with slight increase in September to November.")
     
-row5_1, row5_space, row5_2 = st.columns([2,1,2], gap='small')
+row5_1, row5_space, row5_2 = st.columns([5,1,5], gap='small')
 
 with row5_1:
     st.subheader("Applications received for Visitor Visa")
