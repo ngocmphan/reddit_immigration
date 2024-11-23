@@ -84,7 +84,7 @@ with line2_1:
     st.markdown("- For charts with legends of difference categories, double click on the category in the legend to view the isolated category. Double click again on the category to reset the graph.")
 
     
-row3_1, row3_space, row3_2 = st.columns([4,1,4], gap="small")
+row3_1, row3_space, row3_2 = st.columns([5,1,5], gap="small")
     
 with row3_1:
     st.subheader("How submission per program changed by year?")
