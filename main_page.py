@@ -130,7 +130,7 @@ with row4_2:
     st.markdown("Based on the bar chart, Study permit has the highest engagement or the total comments. The remaining top engagements are: Express Entry, Sponsorship and Work Permit. Noted that Study Permit has significantly higher engagement with more than 70,000 comments.")
 
 row5_1, row5_space, row5_2 = st.columns(
-    [3,1.8,2], gap="small"
+    [5,1,5], gap="small"
 )
 with row5_1:
     st.subheader("What program has the highest average engagement?")
