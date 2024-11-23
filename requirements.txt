@@ -1,6 +1,6 @@
 matplotlib
 streamlit
 numpy>=1.18.5
-pandas==1.5.3
+pandas>=1.5.3
 xmltodict
 plotly
