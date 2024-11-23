@@ -136,7 +136,7 @@ line4_spacer4, line4_1 = st.columns((0.1, 1))
 with line4_1:
     st.markdown("Noted that some of the category in Reddit will be aggregated due to the aggregation of government data collection: PR (Express Entry, Sponsorship, PNP, Quebec); Temporary resident (Study Permit, Work Permit, Working Holiday); Visitor (Visitor visa); Citizenship (Citizenship)")
     
-row4_1, row4_space, row4_2 = st.columns([2,1,2], gap='small')
+row4_1, row4_space, row4_2 = st.columns([5,1,5], gap='small')
 
 with row4_1:
     st.subheader("Applications received for Permanent Resident")
